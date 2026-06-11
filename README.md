@@ -1,7 +1,7 @@
 # Software-Dev-1: Monad-HFT-Node Architecture
 
-[![Node.js CI](https://github.com/YOUR_USERNAME/Software-Dev-1/actions/workflows/node-ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/Software-Dev-1/actions/workflows/node-ci.yml)
-[![Continuous Deployment](https://github.com/YOUR_USERNAME/Software-Dev-1/actions/workflows/cd-deploy.yml/badge.svg)](https://github.com/YOUR_USERNAME/Software-Dev-1/actions/workflows/cd-deploy.yml)
+[![Node.js CI](https://github.com/credkellar-boop/Software-Dev-1/actions/workflows/node-ci.yml/badge.svg)](https://github.com/credkellar-boop/Software-Dev-1/actions/workflows/node-ci.yml)
+[![Continuous Deployment](https://github.com/credkellar-boop/Software-Dev-1/actions/workflows/cd-deploy.yml/badge.svg)](https://github.com/credkellar-boop/Software-Dev-1/actions/workflows/cd-deploy.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
