@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: software-dev-1-api:latest
+    container_name: software-dev-1-node
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - PORT=3000
+    restart: unless-stopped
