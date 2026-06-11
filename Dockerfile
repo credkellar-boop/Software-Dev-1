@@ -1,20 +1,20 @@
-# Use a lightweight Node.js image
-FROM node:20-alpine
+# Use a stable Node.js LTS image
+FROM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy package management files first to leverage Docker cache
+# Copy package.json and package-lock.json first to leverage Docker cache
 COPY package*.json ./
 
-# Install production dependencies only
-RUN npm ci --only=production
+# Install dependencies (only production dependencies if you want a slimmer image)
+RUN npm install
 
-# Copy the rest of the application code
+# Copy the rest of your application code
 COPY . .
 
-# Expose the application port
+# Expose the port your Express app runs on (adjust if your server uses a different port)
 EXPOSE 3000
 
-# Define the execution command
-CMD ["node", "src/server.js"]
+# Start the application using the script defined in your package.json
+CMD [ "npm", "start" ]
