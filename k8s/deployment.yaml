@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: software-dev-1-deployment
+  labels:
+    app: software-dev-1
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: software-dev-1
+  template:
+    metadata:
+      labels:
+        app: software-dev-1
+    spec:
+      containers:
+      - name: software-dev-1-container
+        image: software-dev-1-api:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
